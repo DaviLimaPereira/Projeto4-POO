@@ -12,16 +12,25 @@ import java.util.*;
  * @author davil
  */
 public class Banco {
+    /*
     public static HashMap<Integer, Object> getMathQuiz(){
-        /*O HashMap funciona como um token que contém uma chave(key) e um valor(value);
+        O HashMap funciona como um token que contém uma chave(key) e um valor(value);
           Foi criado um token="quiz" que contem uma chave=INTEGER com valor=OBJECT;
-        */
+        
         HashMap<Integer, Object> quiz = new HashMap<Integer, Object>();
         //O metodo .put() vai inserir a key e o value ao token
         quiz.put(1, new Pergunta("1+1","2",new String[]{"1","2","3"}));
         quiz.put(2, new Pergunta("1+1","2",new String[]{"1","2","3"}));
         quiz.put(3, new Pergunta("1+1","2",new String[]{"1","2","3"}));
         
+        return quiz;
+    }*/
+    public static ArrayList<Pergunta> getMathQuiz(){
+        ArrayList<Pergunta> quiz = new ArrayList<>();
+        quiz.add(new Pergunta("1+1", "2", new String []{"1","2","3"}));
+        quiz.add(new Pergunta("1+2", "3", new String []{"1","2","3"}));
+        quiz.add(new Pergunta("3-1", "2", new String []{"1","2","3"}));
+        quiz.add(new Pergunta("1+0", "1", new String []{"1","2","3"}));
         return quiz;
     }
 }
