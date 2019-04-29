@@ -1,19 +1,15 @@
-<%-- 
-    Document   : index
-    Created on : 24/04/2019, 23:04:38
-    Author     : davil
---%>
-
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>INDEX - WEBQuiz</title>
-    </head>
-    <body>
-        <!--
-            aqui vão os dados dos desenvolvedores
-        -->
-    </body>
-</html>
+<!DOCTYPE html>  
+<html>  
+<head>  
+<meta charset="ISO-8859-1">  
+<title>Servlet Login Example</title>  
+</head>  
+<body>  
+  
+<h1>Login App using HttpSession</h1>  
+<a href="login.html">Login</a>|  
+<a href="LogoutServlet">Logout</a>|  
+<a href="ProfileServlet">Profile</a>  
+  
+</body>  
+</html>  

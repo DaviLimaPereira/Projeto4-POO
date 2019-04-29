@@ -8,6 +8,28 @@
 <%@page import="br.com.fatecpg.quiz.Pergunta"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
+<!DOCTYPE html>  
+<html>  
+<head>  
+<meta charset="ISO-8859-1">  
+<title>Servlet Login Example</title>  
+</head>  
+<body>  
+  
+<h1>Login App using HttpSession</h1>  
+<a href="login.html">Login</a>|  
+<a href="LogoutServlet">Logout</a>|  
+<a href="ProfileServlet">Profile</a>  
+  
+</body>  
+</html>  
+
+
+
+
+
+
+
 <%
     double nota = 0.0;
     if(request.getParameter("MathTest")!=null){
