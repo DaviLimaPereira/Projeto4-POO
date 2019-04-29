@@ -1,3 +1,10 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package br.com.fatecpg.quiz;
+
 import java.io.IOException;  
 import java.io.PrintWriter;  
   
@@ -6,6 +13,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;  
 import javax.servlet.http.HttpServletResponse;  
 import javax.servlet.http.HttpSession;  
+
 public class LoginServlet extends HttpServlet {  
     protected void doPost(HttpServletRequest request, HttpServletResponse response)  
                     throws ServletException, IOException {  
@@ -16,7 +24,7 @@ public class LoginServlet extends HttpServlet {
         String name=request.getParameter("name");  
         String password=request.getParameter("password");  
           
-        if(password.equals("admin123")){  
+        if(password.equals("123")){  
         out.print("Welcome, "+name);  
         HttpSession session=request.getSession();  
         session.setAttribute("name",name);  

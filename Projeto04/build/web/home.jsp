@@ -21,43 +21,20 @@
 <a href="LogoutServlet">Logout</a>|  
 <a href="ProfileServlet">Profile</a>  
   
-</body>  
-</html>  
 
+    <h2> CONTEUDO EXECUTADO </h2>
 
-
-
-
-
-
-<%
-    double nota = 0.0;
-    if(request.getParameter("MathTest")!=null){
-        int respostaCorreta = 0;
-        for(Pergunta q: Banco.getMathQuiz()){
-            String respostaUser = request.getParameter(q.getPergunta());
-            if(respostaUser!=null){
-                if(q.getResposta().equals(respostaUser)){
-                    respostaCorreta++;
-                }
-            }
-        }
-        nota = (double)respostaCorreta / (double)Banco.getMathQuiz().size();
-    }
-%>
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>HOME - WEBQuiz</title>
-    </head>
-    <body>
-        <h1>WEBQuiz</h1>
-        <h2>Home</h2>
-        <% if(request.getParameter("MathTest")==null){ %>
-            <h3>Clique <a href="teste.jsp">aqui</a> para realizar seu teste.</h3>
-        <% }else{ %>
-            <h3>Sua nota foi <u><%=100*nota%>%</u></h3>
-            <h3>Clique <a href="teste.jsp">aqui</a> para realizar seu teste.</h3>
-        <%}%>
+    criar sistema de login com httpnet session <br>
+    
+    
+    <h2> CONTEUDO A SER EXECUTADO </h2>
+            
+    armazenar logins em array ou hash map <br>
+    QUIZ RANDOMICO - SENDO APRESENTADO 10 DE MAIS PERGUNTAS <br>
+    NA HOME Tabela com 10 ultimos testes <br> 
+    NA HOME Tabela com os 10 melhores resultados <br>
+    NO PERFIL tabela com os ultimos testes executados pelo logado<br>
+    No PERFIL media dos testes do logado<br>
+    
     </body>
 </html>
